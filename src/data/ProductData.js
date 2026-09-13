@@ -1,0 +1,448 @@
+export const ProductData = [
+  {
+    id: 1,
+    name: "Medicube Facial Foam Cleanser ",
+    brand: "Medicube",
+    category: "Cleanser",
+    price: 18.99,
+    rating: 4.8,
+    image: "https://i.pinimg.com/1200x/95/bb/62/95bb621f561dc72d7c91de11ac446849.jpg",
+    description:
+      "A gentle facial cleanser that removes dirt and impurities while keeping your skin soft and hydrated.",
+  },
+  {
+    id: 2,
+    name: "Medicube Pink Peptide Serum",
+    brand: "Medicube",
+    category: "Serum",
+    price: 24.99,
+    rating: 4.9,
+    image: "https://i.pinimg.com/736x/5b/dd/e8/5bdde8d044ba8d380e5718c4e1baeb1e.jpg",
+    description:
+      "A lightweight Vitamin C serum that helps brighten dull-looking skin and improve your natural glow.",
+  },
+  {
+    id: 3,
+    name: "Medicube TXA Niacinamide  Cream",
+    brand: "Medicube",
+    category: "Moisturizer",
+    price: 21.99,
+    rating: 4.7,
+    image: "https://i.pinimg.com/736x/a5/04/59/a5045992c9c4d31134b036b2c889da0d.jpg",
+    description:
+      "A lightweight daily moisturizer that helps keep your skin smooth, soft, and hydrated.",
+  },
+  {
+    id: 4,
+    name: "Medicube Pink Tone Up Sun Cream",
+    brand: "Medicube",
+    category: "Sunscreen",
+    price: 19.99,
+    rating: 4.8,
+    image: "https://i.pinimg.com/1200x/16/6d/8d/166d8db0598da842b34b69dc93cb13dc.jpg",
+    description:
+      "Lightweight SPF 50 sunscreen designed for everyday sun protection.",
+  },
+  {
+    id: 5,
+    name: "Medicube Pink Cica Soothing Toner",
+    brand: "Medicube",
+    category: "Toner",
+    price: 16.99,
+    rating: 4.6,
+    image: "https://i.pinimg.com/1200x/68/a5/49/68a5490469e3f00c33d57c7334109349.jpg",
+    description:
+      "A refreshing toner that helps prepare your skin for the rest of your skincare routine.",
+  },
+   
+ 
+  {
+    id: 11,
+    name: "Numbuzin No.1 Pure-Full Calming Herb Toner",
+    brand: "Numbuzin",
+    category: "Toner ",
+    price: 22.79,
+    rating: 4.9,
+    image: "https://i.pinimg.com/736x/7a/10/ab/7a10ab3ff50e6fb82198b36d405b239f.jpg",
+    description:
+      "Is your skin feeling irritated, red, dehydrated, or sensitive after cleansing? A damaged skin barrier can make breakouts and dryness even worse. Sensitive skin deserves gentle care. ",
+  },
+  {
+    id: 12,
+    name: "Anua Rice 70 Glow Milky Toner",
+    brand: "Anua",
+    category: "Toner ",
+    price: 27.99,
+    rating: 4.9,
+    image: "https://i.pinimg.com/736x/4e/d7/36/4ed7364f91770f5b699137aea3cf4736.jpg",
+    description:
+      "Anua Rice 70 Glow Milky Toner is a Korean skincare essential designed to add lightweight moisture and a fresh, radiant-looking finish to your daily routine. ",
+  },
+  {
+    id: 13,
+    name: "AXIS-Y Daily Purifying Treatment Toner",
+    brand: "AXIS-Y",
+    category: "Toner ",
+    price: 27.99,
+    rating: 4.9,
+    image: "https://i.pinimg.com/1200x/e4/a2/b6/e4a2b685bc3e57756120551be6651e5e.jpg",
+    description:
+      "Microbiome Friendly Products – Hydrates deeply while preserving your skin’s natural defenses.",
+  },
+  {
+    id: 14,
+    name: "Rice Toner, Milky Toners for Glowing Skin",
+    brand: "Yeju korea",
+    category: "Toner ",
+    price: 29.99,
+    rating: 4.9,
+    image: "https://i.pinimg.com/736x/20/31/fb/2031fb640fe94e34ec0e9e85f964a6a4.jpg",
+    description:
+      "Rice Toner, Milky Toners for Glowing Skin, Rice Water Korean, Glow Essence with Niacinamide,Hydrating for Dry, Dull, Combination Skin,Vegan,Fragrance Free, Glass Skin ",
+  },
+  {
+    id: 15,
+    name: "Anua Heartleaf + BHA Deep Cleansing Foam",
+    brand: "Anua",
+    category: "Cleanser",
+    price: 27.99,
+    rating: 4.9,
+    image: "https://i.pinimg.com/736x/d0/0e/e4/d00ee46b7d4827be846905778662a6e2.jpg",
+    description:
+      "Gentle cleansing with calming heartleaf power 💚 Removes dirt, excess oil & leaves your skin fresh, soft, and glowing every day.",
+  },
+  {
+    id: 16,
+    name: "SKIN1004 Madagascar Centella Tea-Trica",
+    brand: "Skin1004",
+    category: "Cleanser",
+    price: 17.09,
+    rating: 4.9,
+    image: "https://i.pinimg.com/736x/03/42/25/034225970f5a8b2d102fb6e53ffd1e8a.jpg",
+    description:
+      "Discover the SKIN1004 Madagascar Centella Tea-Trica BHA Foam Cleanser, a refreshing foaming cleanser featuring Tea Tree Water, BHA, and Madagascar Centella. ",
+  },
+   {
+    id: 17,
+    name: "Medicube  Capsule Cleansing Foam",
+    brand: "Skin1004",
+    category: "Cleanser",
+    price: 18.09,
+    rating: 4.9,
+    image: "https://i.pinimg.com/736x/f5/ae/f1/f5aef1e0d2dce9ea446981e30a28b0c3.jpg",
+    description:
+      "medicube Facial Cleanser Zero Pore Capsule Cleansing Foam | Daily Gentle Cleanser for Skin Texture, Blackhead & Pore Care | AHA, BHA & PHA for Deep Cleansing | Korean Skincare, 4.23 oz",
+  },
+   {
+    id: 18,
+    name: "Balenceful Cica Pore Cleansing Foam ",
+    brand: "Torriden",
+    category: "Cleanser",
+    price: 15.09,
+    rating: 4.9,
+    image: "https://i.pinimg.com/1200x/4c/3b/1b/4c3b1b9a2ea578e0711b07fb82c662e2.jpg",
+    description:
+      "TORRIDEN DIVE-IN Low Molecular Hyaluronic Acid Cleansing Foam is a gentle cleanser that effectively removes impurities while helping to maintain the skin's natura",
+  },
+   {
+    id: 19,
+    name: "Numbuzin No.2 Deep  Cream Cleanser",
+    brand: "Numbuzin",
+    category: "Cleanser",
+    price: 12.09,
+    rating: 4.9,
+    image: "https://i.pinimg.com/1200x/85/22/e9/8522e9eaa4ef0f4e21c32f3e441beab3.jpg",
+    description:
+      "The NUMBUZIN No.2 Deep Clean Fresh Cream Cleanser is a cleansing foam with rich lather designed to pull out and remove pore waste such as excess sebum and makeup residue. ",
+  },
+   {
+    id: 20,
+    name: "AXIS-Y,  Refreshing Cleansing Foam",
+    brand: "Axis-Y",
+    category: "Cleanser",
+    price: 15.90,
+    rating: 4.9,
+    image: "https://i.pinimg.com/1200x/21/d9/eb/21d9eb112d13ac83255744cd9f45e546.jpg",
+    description:
+      "This Sunday Morning Refreshing Cleansing Foam is best used every day of the week to keep your skin glowing. This pH balanced cleanser contains birch sap to help with oil control, while providing deep hydration",
+  },
+   {
+    id: 21,
+    name: "I’m From Rice Whip Facial Cleanser ",
+    brand: "Yeju korea",
+    category: "Cleanser",
+    price: 23.39,
+    rating: 4.9,
+    image: "https://i.pinimg.com/1200x/3f/c2/40/3fc240476a26f17bd48b196b48902307.jpg",
+    description:
+      "Radiant Skin with the Power of Rice Water Transform Your ComplexionHarness the benefits of rice water with our Rice Whip Facial Cleanser, featuring Yeoju rice and rice bran extracts.",
+  },
+  {
+    id: 22,
+    name: "Skin1004 Poremizing Clear Toner",
+    brand: "Skin1004",
+    category: "Toner ",
+    price: 24.89,
+    rating: 4.9,
+    image: "https://i.pinimg.com/736x/9f/cf/e5/9fcfe5413284bf252a5d0658c50d9994.jpg",
+    description:
+      "Korean Skincare Toner for Pore Care – Himalayan Pink Salt helps remove excess oil and impurities for fresh, balanced-looking skin. ",
+  },
+   {
+    id: 23,
+    name: "Medicube Zero Pore One Day 10 Peptide Serum",
+    brand: "Medicube",
+    category: "Serum",
+    price: 44.99,
+    rating: 4.9,
+    image: "https://i.pinimg.com/1200x/48/dd/e3/48dde34ddba416337a85ae4289644858.jpg",
+    description:
+      "Looking for smoother, clearer skin? The Medicube Zero Pore One Day Peptide Serum combines AHA, BHA, PHA, LHA, and Copper Peptides to help refine pores, control excess oil, and improve skin texture. ",
+  },
+   {
+    id: 24,
+    name: "Brightening Probiotic Serum",
+    brand: "Numbuzin",
+    category: "Serum",
+    price: 24.99,
+    rating: 4.9,
+    image: "https://i.pinimg.com/736x/0b/e8/e3/0be8e3bb52c3569e4e0201f06ccc43f3.jpg",
+    description:
+      "Microbiome-Friendly Serum – Packed with skin-loving probiotics for smooth, resilient beauty.",
+  },
+   {
+    id: 25,
+    name: "Torriden Dive-In Hyaluronic Acid Serum",
+    brand: "Torriden",
+    category: "Serum",
+    price: 19.99,
+    rating: 4.9,
+    image: "https://i.pinimg.com/736x/2d/a0/0e/2da00e79509e40c8df1316e50be907aa.jpg",
+    description:
+      "A lightweight Vitamin C serum that helps brighten dull-looking skin and improve your natural glow.",
+  },
+   {
+    id: 26,
+    name: "SKIN1004 Tone Balancing Capsule Ampoule",
+    brand: "Skin1004",
+    category: "Serum",
+    price: 24.99,
+    rating: 4.9,
+    image: "https://i.pinimg.com/736x/c6/a8/51/c6a851824b61dc6a8c91b35698b28d07.jpg",
+    description:
+      "Lightweight soothing ampoule for hydrated, fresh and balanced skin ✨ Infused with Centella from Madagascar to calm irritation, minimize pores and give a healthy glow without feeling sticky.",
+  },
+   {
+    id: 27,
+    name: "Axis-y Artichoke Intensive Skin Barrier Ampoule",
+    brand: "Axis-Y",
+    category: "Serum",
+    price: 24.99,
+    rating: 4.9,
+    image: "https://i.pinimg.com/1200x/c7/8f/84/c78f84c3f35bebcb94cae9187c8ffe2c.jpg",
+    description:
+      "If your skin feels sensitive, easily irritated or just not as strong as it should be, this ampoule is such a good barrier-loving pick 💚✨ It helps hydrate deeply while supporting your skin barrier, so your skin feels calmer, stronger and more balanced over time.",
+  },
+   {
+    id: 28,
+    name: "Anua Azelaic Acid 10% + Hyaluronic Acid",
+    brand: "Anua",
+    category: "Serum",
+    price: 27.99,
+    rating: 4.9,
+    image: "https://i.pinimg.com/736x/f3/80/84/f3808451762b5c177e3beb6810bcb04b.jpg",
+    description:
+      "The Ultimate Cica & Azelaic Acid Power Couple 🌱 Elevate your skincare routine with the Anua Azelaic Acid 10 + Hyaluron Redness Soothing Serum. ",
+  },
+   {
+    id: 29,
+    name: "Rice serum, hydrating glowing skin",
+    brand: "Yeju korea",
+    category: "Serum",
+    price: 24.99,
+    rating: 4.9,
+    image: "https://i.pinimg.com/1200x/4f/62/0d/4f620d268b18df4fc845e2d4e3a9d990.jpg",
+    description:
+      "A serum that contains rice germ fermented extract, which retains more than 65% of the nutritional value in a grain of rice.What it does: It is rich in vitamin B and powerful antioxidants, which will boost collagen production and improve elasticity. How to use: After cleansing, prep skin with the toner.",
+  },
+   {
+    id: 30,
+    name: "Medicube Hyaluronic Acid Capsule Cream",
+    brand: "Medicube",
+    category: "Moisturizer",
+    price: 21.99,
+    rating: 4.7,
+    image: "https://i.pinimg.com/736x/94/ec/a8/94eca838b1badc554c214c60ac49dd2c.jpg",
+    description:
+      "120 hours of hydration from one cream — those blue capsules are packed with hyaluronic acid! 💙 Medicube Capsule Cream with Hyaluronic Acid is a calming daily moisturizer with visible blue capsules that burst on contact and deliver deep, lasting hydration",
+  },
+   {
+    id: 31,
+    name: "Madagascar Centella Probio-Cica Enrich Cream",
+    brand: "Skin1004",
+    category: "Moisturizer",
+    price: 21.99,
+    rating: 4.7,
+    image: "https://i.pinimg.com/736x/8d/e8/d4/8de8d4bd11c435789d9b36b63d62fd5f.jpg",
+    description:
+      " Give your skin the hydration it deserves with the SKIN1004 Madagascar Centella Soothing Cream. ",
+  },
+   {
+    id: 32,
+    name: "Torriden Dive-In Soothing Cream ",
+    brand: "Torriden",
+    category: "Moisturizer",
+    price: 21.99,
+    rating: 4.7,
+    image: "https://i.pinimg.com/1200x/ef/6b/04/ef6b0404c4bea68bd56f2d0ba053127e.jpg",
+    description:
+      "Experience deep hydration with the Torriden Dive-In Soothing Cream. This lightweight gel moisturizer is infused with hyaluronic acid to instantly soothe, hydrate, and plump the skin. Experience deep hydration with the Torriden Dive-In Soothing Cream. This lightweight gel moisturizer is infused with hyaluronic acid to instantly soothe, hydrate, and plump the skin. ",
+  },
+   {
+    id: 33,
+    name: "numbuzin No.1 Pantothenic B5 Cream ",
+    brand: "Numbuzin",
+    category: "Moisturizer",
+    price: 24.99,
+    rating: 4.7,
+    image: "https://i.pinimg.com/736x/c7/85/04/c785043b06e28ff7dd71a8136400f840.jpg",
+    description:
+      "numbuzin No.1 Pantothenic B5 Cream is a specialized non-comedogenic moisturizer that uses Pantothenic Acid to dissolve excess sebum and prevent breakouts, providing 130 hours of weightless, soothing hydration.",
+  },
+   {
+    id: 34,
+    name: "Gentle Moisturizer for Acne-Prone Skin ",
+    brand: "Anua",
+    category: "Moisturizer",
+    price: 11.99,
+    rating: 4.7,
+    image: "https://i.pinimg.com/736x/44/82/31/448231e48ab3445fd670b3bbd996c029.jpg",
+    description:
+      "Calm and hydrate your skin with the Anua Heartleaf 70% Soothing Cream ✨ This Korean skincare moisturizer is formulated with 70% heartleaf extract to help soothe irritation, reduce redness, and deeply hydrate sensitive or stressed skin.",
+  },
+   {
+    id: 35,
+    name: "AXIS-Y dark Spot Correcting Cream",
+    brand: "Axis-Y",
+    category: "Moisturizer",
+    price: 21.99,
+    rating: 4.7,
+    image: "https://i.pinimg.com/1200x/1c/f4/a3/1cf4a38d003be441bca05de5929f6bbf.jpg",
+    description:
+      "Axis-Y Dark Spot Correcting Glow Cream on kirkastava, rauhoittava ja syväkosteuttava kosteusvoide kaikille ihotyypeille. ",
+  },
+   {
+    id: 36,
+    name: "I'M FROM Rice Cream",
+    brand: "Yeju korea",
+    category: "Moisturizer",
+    price: 21.99,
+    rating: 4.7,
+    image: "https://i.pinimg.com/736x/22/f3/8b/22f38be22caeef2e73d2263b99ce0c64.jpg",
+    description:
+      "Rice bran that protects rice grain with ceramide over the large daily temperature range of Yeoju will protect our skin by forming a ceramide barrier. It contains 41% rice bran essence which is from an organic farm in Yeosu, Korea",
+  },
+   {
+    id: 37,
+    name: "Medicube Zero Pore Moisture Sun Serum",
+    brand: "Medicube",
+    category: "Sunscreen",
+    price: 29.99,
+    rating: 4.8,
+    image: "https://i.pinimg.com/1200x/dd/31/70/dd3170a9af8d8ae48fa251697deb807c.jpg",
+    description:
+      "medicube Zero Pore Moisture Sun Serum 50ml | Discover all things K-Beauty at OLIVE YOUNG Global. Shop skincare, makeup, beauty tools, supplements & more at great prices.",
+  },
+   {
+    id: 38,
+    name: "SKIN1004 Hyalu-Cica Water-Fit Sun Serum",
+    brand: "Skin1004",
+    category: "Sunscreen",
+    price: 13.99,
+    rating: 4.8,
+    image: "https://i.pinimg.com/736x/3e/3a/60/3e3a604937dc4a3411c10577fe33b364.jpg",
+    description:
+      "Lightweight, hydrating, and powerful sun protection in one. ☀️💙 Inspired by the freshness of the ocean, SKIN1004 Hyalu-Cica Water-Fit Sun Serum delivers SPF50+ PA++++ protection while soothing and moisturizing the skin with Centella Asiatica and Hyaluronic Acid. ",
+  },
+   {
+    id: 39,
+    name: "DIVE-IN Watery Moisture Sun Cream",
+    brand: "torriden",
+    category: "Sunscreen",
+    price: 32.99,
+    rating: 4.8,
+    image: "https://i.pinimg.com/1200x/55/2c/62/552c6278ced26340a16ff1cd97eb6111.jpg",
+    description:
+      "Torriden DIVE-IN Watery Moisture Sun Cream is a moisture-rich, lightweight sunscreen that provides broad-spectrum UV protection while keeping skin comfortably hydrated.",
+  },
+   {
+    id: 40,
+    name: "Numbuzin Clear Filter Sun Essence",
+    brand: "Numbuzin",
+    category: "Sunscreen",
+    price: 49.99,
+    rating: 4.8,
+    image: "https://i.pinimg.com/736x/42/c1/35/42c135e9f82dd544afadfb55b537eeb6.jpg",
+    description:
+      "Numbuzin Clear Filter Sun Essence SPF 50+ PA++++ – lightweight sunscreen with a no-white-cast finish that hydrates, soothes and leaves skin fresh and glowing. Must buy one for kbeauty lovers",
+  },
+   {
+    id: 41,
+    name: "Anua Airy Sun Cream SPF50+ ",
+    brand: "Anua",
+    category: "Sunscreen",
+    price: 12.99,
+    rating: 4.8,
+    image: "https://i.pinimg.com/1200x/14/a3/8b/14a38b5c4819ff03ed81e9773950a146.jpg",
+    description:
+      "Protect and perfect your skin with the Anua Airy Sun Cream SPF50+ PA++++, a lightweight daily sunscreen that delivers powerful broad-spectrum protection without feeling heavy or greasy.",
+  },
+   {
+    id: 42,
+    name: " AXIS-Y Complete No-Stress Physical Sunscreen ",
+    brand: "Axis-Y",
+    category: "Sunscreen",
+    price: 15.99,
+    rating: 4.8,
+    image: "https://i.pinimg.com/1200x/f4/f5/58/f4f558df937a5385198021fa9edd41b7.jpg",
+    description:
+      "AXIS-Y Complete No-Stress Physical Sunscreen is a Mugwort based sunscreen featuring 2% Niacinamide and Squalane that protects skin from UVA and UVB damage while providing the healing properties of skin-loving ingredients. It has a gel-like texture with Hyaluronic Acid added for additional hydration and the herbal fragrances have been excluded. ",
+  },
+   {
+    id: 43,
+    name: "I'm From Rice Sunscreen",
+    brand: "Yeju korea",
+    category: "Sunscreen",
+    price: 24.99,
+    rating: 4.8,
+    image: "https://i.pinimg.com/1200x/db/0b/b3/db0bb3f70db656374b391fa9f26eb126.jpg",
+    description:
+      "Protect and nourish your skin every day with I'm From Rice Sunscreen. Specially formulated for sensitive and dry skin, this lightweight sunscreen delivers broad-spectrum UV protection while helping to keep skin hydrated, calm, and comfortable",
+  },
+   {
+    id: 44,
+    name: "Medicube Zero Pore Toner for Oily & Acne Skin ",
+    brand: "Medicube",
+    category: "Toner",
+    price: 16.99,
+    rating: 4.6,
+    image: "https://i.pinimg.com/736x/1e/68/b7/1e68b79d1d3d62468c1e8ee90e835261.jpg",
+    description:
+      "Medicube Zero Pore Toner is an exfoliating toner formulated with AHA, BHA, PHA, and Niacinamide to help remove dead skin cells, unclog pores, control excess oil, and improve uneven skin texture. ",
+  },
+   
+   {
+    id: 45,
+    name: "Torriden DIVE-IN Hyaluronic Acid",
+    brand: "Torriden",
+    category: "Toner",
+    price: 16.99,
+    rating: 4.6,
+    image: "https://i.pinimg.com/736x/2b/1c/18/2b1c18d5bc768f68f25af40a959f8147.jpg",
+    description:
+      "Discover why the Torriden DIVE-IN Low Molecular Hyaluronic Acid Toner is the #1 viral toner in Korea!",
+  },
+   
+
+];
+
