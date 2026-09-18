@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
+import { useCart } from "../context/CartContext";
 
 function ProductCard({ product }) {
+  const { addToCart } = useCart();
+
   if (!product) return null;
 
   return (
@@ -42,12 +45,13 @@ function ProductCard({ product }) {
         <div className="mt-5 justify-between flex items-center">
           <p className="text-2xl font-bold text-pink-500">${product.price}</p>
 
-          <Link
-            to={`/product/${product.id}`}
-            className="px-4 py-2 rounded-full bg-gray-900 text-sm font-semibold text-white transition hover:bg-pink-500"
-          >
-            View details
-          </Link>
+      <button
+        type="button"
+        onClick={() => addToCart(product)}
+        className="px-4 py-2 rounded-full bg-gray-900 text-sm font-semibold text-white transition hover:bg-pink-500"
+      >
+        Add to cart
+      </button>
         </div>
       </div>
     </article>

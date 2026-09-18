@@ -1,33 +1,13 @@
 import React, { useState } from "react";
-import ProductCard from "../components/ProductCard";
-import { ProductData } from "../data/ProductData";
-
-const normalizeCategory = (value = "") =>
-  value.trim().toLowerCase().replace(/\s+/g, " ");
+import SearchBar from "../components/SearchBar";
+import ProductGrid from "../components/ProductGrid";
+import { useProducts } from "../context/ProductContext";
 
 function Shop() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
-
-  const categories = [
-    "All",
-    ...new Set(
-      ProductData.map((product) => product.category.trim()).filter(Boolean)
-    ),
-  ];
-
-  const filteredProducts = ProductData.filter((product) => {
-    const searchValue = search.trim().toLowerCase();
-    const searchMatch =
-      searchValue.length === 0 ||
-      product.name.toLowerCase().includes(searchValue);
-
-    const categoryMatch =
-      category === "All" ||
-      normalizeCategory(product.category) === normalizeCategory(category);
-
-    return searchMatch && categoryMatch;
-  });
+  const { categories, filterProducts } = useProducts();
+  const filteredProducts = filterProducts({ search, category });
 
   return (
     <div className="px-6 py-12 max-w-7xl mx-auto">
@@ -44,12 +24,9 @@ function Shop() {
 
       {/* Search */}
       <div className="mb-8">
-        <input
-          type="text"
-          placeholder="Search skincare products..."
+        <SearchBar
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="px-5 py-3 w-full border border-gray-200 rounded-xl outline-none focus:ring-2 focus:ring-pink-300"
         />
       </div>
 
@@ -73,22 +50,10 @@ function Shop() {
       </div>
 
       {/* Products */}
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-
-        {filteredProducts.map((product) => (
-          <ProductCard
-            key={product.id}
-            product={product}
-          />
-        ))}
-
-      </div>
-
-      {filteredProducts.length === 0 && (
-        <p className="py-20 text-center text-gray-500">
-          No products found.
-        </p>
-      )}
+      <ProductGrid
+        products={filteredProducts}
+        emptyMessage="Try another product name or clear your filters."
+      />
 
     </div>
   );

@@ -1,17 +1,19 @@
 import React from "react";
 import HeroSection from "../components/HeroSection";
-import ProductCard from "../components/ProductCard";
-import { ProductData } from "../data/ProductData";
+import CategoryCard from "../components/CategoryCard";
+import ProductGrid from "../components/ProductGrid";
+import { useProducts } from "../context/ProductContext";
 import { Link } from "react-router-dom";
 
 function Home() {
-  const popularProducts = ProductData.slice(0, 4);
+  const { products } = useProducts();
+  const popularProducts = products.slice(0, 4);
   const categories = [
-    { name: "Cleansers", query: "Cleanser", product: ProductData[0], count: "12 products" },
-    { name: "Moisturizers", query: "Moisturizer", product: ProductData[2], count: "18 products" },
-    { name: "Serums", query: "Serum", product: ProductData[1], count: "15 products" },
-    { name: "Sunscreen", query: "Sunscreen", product: ProductData[3], count: "10 products" },
-    { name: "Toners", query: "Toner", product: ProductData[4], count: "8 products" },
+    { name: "Cleansers", query: "Cleanser", product: products[0], count: "12 products" },
+    { name: "Moisturizers", query: "Moisturizer", product: products[2], count: "18 products" },
+    { name: "Serums", query: "Serum", product: products[1], count: "15 products" },
+    { name: "Sunscreen", query: "Sunscreen", product: products[3], count: "10 products" },
+    { name: "Toners", query: "Toner", product: products[4], count: "8 products" },
   ];
 
   return (
@@ -33,21 +35,13 @@ function Home() {
 
         <div className="grid grid-cols-2 gap-4 md:grid-cols-5">
           {categories.map(({ name, query, product, count }) => (
-            <Link
+            <CategoryCard
               key={name}
-              to={`/category?name=${query}`}
-              className="overflow-hidden rounded-2xl border border-pink-100 bg-pink-50 group transition hover:-translate-y-1 hover:shadow-lg"
-            >
-              <img
-                src={product.image}
-                alt={name}
-                className="h-36 w-full object-cover transition duration-500 group-hover:scale-105 md:h-40"
-              />
-              <div className="px-3 py-4 bg-white text-center">
-                <h3 className="font-semibold text-gray-800">{name}</h3>
-                <p className="mt-1 text-xs text-gray-500">{count}</p>
-              </div>
-            </Link>
+              name={name}
+              query={query}
+              product={product}
+              count={count}
+            />
           ))}
         </div>
       </section>
@@ -75,7 +69,7 @@ function Home() {
 
           <div className="p-3 mx-auto w-full max-w-sm rounded-[2rem] bg-pink-200 shadow-[0_20px_50px_rgba(236,72,153,0.14)] relative">
             <img
-              src={ProductData[1].image}
+              src={products[1].image}
               alt="Featured skincare serum"
               className="h-56 w-full rounded-[1.5rem] object-cover md:h-64"
             />
@@ -113,16 +107,7 @@ function Home() {
 
           </div>
 
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-
-            {popularProducts.map((product) => (
-              <ProductCard
-                key={product.id}
-                product={product}
-              />
-            ))}
-
-          </div>
+          <ProductGrid products={popularProducts} />
 
         </div>
 

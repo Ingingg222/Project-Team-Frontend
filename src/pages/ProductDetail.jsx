@@ -1,11 +1,14 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { FaStar, FaShoppingCart, FaHeart, FaTruck, FaShieldAlt } from "react-icons/fa";
-import { ProductData } from "../data/ProductData";
+import { useCart } from "../context/CartContext";
+import { useProducts } from "../context/ProductContext";
 
 function ProductDetail() {
   const { id } = useParams();
-  const product = ProductData.find((item) => item.id === Number(id));
+  const { addToCart } = useCart();
+  const { getProductById } = useProducts();
+  const product = getProductById(id);
 
   if (!product) {
     return (
@@ -71,9 +74,9 @@ function ProductDetail() {
           <p className="mt-6 text-base text-gray-600 leading-8">{product.description}</p>
 
           <div className="flex-wrap mt-8 gap-4 flex items-center">
-            <button className="gap-3 px-8 py-4 justify-center rounded-full bg-pink-500 text-base font-semibold text-white flex items-center transition hover:bg-pink-600">
+            <button onClick={() => addToCart(product)} className="gap-3 px-8 py-4 justify-center rounded-full bg-pink-500 text-base font-semibold text-white flex items-center transition hover:bg-pink-600">
               <FaShoppingCart />
-              Add to Cart
+              Add to Card
             </button>
 
             <button className="gap-2 px-6 py-4 rounded-full border border-gray-300 bg-white font-semibold text-gray-700 flex items-center transition hover:border-pink-300 hover:text-pink-500">

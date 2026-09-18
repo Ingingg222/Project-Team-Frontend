@@ -1,20 +1,14 @@
 import React from "react";
 import { useSearchParams } from "react-router-dom";
-import ProductCard from "../components/ProductCard";
-import { ProductData } from "../data/ProductData";
-
-const normalizeCategory = (value = "") =>
-  value.trim().toLowerCase().replace(/\s+/g, " ");
+import ProductGrid from "../components/ProductGrid";
+import { useProducts } from "../context/ProductContext";
 
 function Category() {
   const [searchParams] = useSearchParams();
+  const { filterProducts } = useProducts();
 
   const category = searchParams.get("name") || "";
-  const normalizedCategory = normalizeCategory(category);
-
-  const products = ProductData.filter(
-    (product) => normalizeCategory(product.category) === normalizedCategory
-  );
+  const products = filterProducts({ category });
 
   return (
     <div className="px-6 py-16 max-w-7xl mx-auto">
@@ -23,16 +17,7 @@ function Category() {
         {category} Products
       </h1><br />
 
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-
-        {products.map((product) => (
-          <ProductCard
-            key={product.id}
-            product={product}
-          />
-        ))}
-
-      </div>
+      <ProductGrid products={products} emptyMessage="This category has no products yet." />
 
     </div>
   );
