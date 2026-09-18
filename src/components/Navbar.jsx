@@ -18,22 +18,18 @@ function Navbar() {
 	const closeMenu = () => setMenuOpen(false);
 
 	return (
-		<header className="relative z-50 bg-[#fffaf8] text-gray-900">
-			<div className="bg-gray-900 px-6 py-2 text-center text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-white">
-				Free shipping on orders over $50
-			</div>
+		<header className="z-50 bg-pink-100 text-gray-900 relative">
+			
 
-			<nav className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-5 lg:px-8">
+			<nav className="gap-6 px-6 py-5 mx-auto max-w-7xl justify-between flex items-center lg:px-8">
 				<Link to="/" onClick={closeMenu} className="group shrink-0">
-					<span className="block font-serif text-2xl font-bold leading-none tracking-tight text-gray-900">
-						Luma<span className="text-pink-500">.</span>
+					<span className="font-serif text-2xl font-bold text-gray-900 block leading-none tracking-tight">
+						M & L Cusmetic<span className="text-pink-500"></span>
 					</span>
-					<span className="mt-1 block text-[0.58rem] font-semibold uppercase tracking-[0.28em] text-gray-500">
-						Skin, simplified
-					</span>
+					
 				</Link>
 
-				<div className="hidden items-center gap-8 lg:flex">
+				<div className="gap-8 hidden items-center lg:flex">
 					{navigation.map(({ label, to }) => (
 						<NavLink
 							key={to}
@@ -49,21 +45,21 @@ function Navbar() {
 					))}
 				</div>
 
-				<div className="flex items-center gap-2">
+				<div className="gap-2 flex items-center">
 					<button
 						type="button"
 						aria-label="Wishlist"
-						className="hidden h-10 w-10 items-center justify-center rounded-full text-gray-700 transition hover:bg-pink-50 hover:text-pink-500 sm:flex"
+						className="h-10 w-10 justify-center rounded-full text-gray-700 hidden items-center transition hover:bg-pink-50 hover:text-pink-500 sm:flex"
 					>
 						<FiHeart size={19} />
 					</button>
 					<Link
 						to="/cart"
 						aria-label="Shopping cart"
-						className="relative flex h-10 w-10 items-center justify-center rounded-full text-gray-700 transition hover:bg-pink-50 hover:text-pink-500"
+						className="h-10 w-10 justify-center rounded-full text-gray-700 relative flex items-center transition hover:bg-pink-50 hover:text-pink-500"
 					>
 						<FiShoppingBag size={20} />
-						<span className="absolute right-0 top-0 flex h-4 min-w-4 items-center justify-center rounded-full bg-pink-500 px-1 text-[0.6rem] font-bold text-white">
+						<span className="px-1 top-0 h-4 min-w-4 justify-center rounded-full bg-pink-500 text-[0.6rem] font-bold text-white absolute right-0 flex items-center">
 							{itemCount}
 						</span>
 					</Link>
@@ -72,7 +68,7 @@ function Navbar() {
 						aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
 						aria-expanded={menuOpen}
 						onClick={() => setMenuOpen((isOpen) => !isOpen)}
-						className="flex h-10 w-10 items-center justify-center rounded-full text-gray-700 transition hover:bg-pink-50 hover:text-pink-500 lg:hidden"
+						className="h-10 w-10 justify-center rounded-full text-gray-700 flex items-center transition hover:bg-pink-50 hover:text-pink-500 lg:hidden"
 					>
 						{menuOpen ? <FiX size={21} /> : <FiMenu size={21} />}
 					</button>
@@ -80,8 +76,8 @@ function Navbar() {
 			</nav>
 
 			{menuOpen && (
-				<div className="border-t border-pink-100 bg-white px-6 py-4 shadow-lg lg:hidden">
-					<div className="mx-auto flex max-w-7xl flex-col gap-1">
+				<div className="px-6 py-4 border-t border-pink-100 bg-white shadow-lg lg:hidden">
+					<div className="flex-col gap-1 mx-auto max-w-7xl flex">
 						{navigation.map(({ label, to }) => (
 							<NavLink
 								key={to}
