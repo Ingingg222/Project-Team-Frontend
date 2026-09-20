@@ -75,7 +75,7 @@ function Navbar() {
 						aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
 						aria-expanded={menuOpen}
 						onClick={() => setMenuOpen((isOpen) => !isOpen)}
-						className="h-10 w-10 justify-center rounded-full text-gray-700 flex items-center transition hover:bg-pink-50 hover:text-pink-500 lg:hidden"
+						className="h-10 w-10 justify-center rounded-full text-gray-700 flex items-center transition hover:bg-pink-50 hover:text-pink-50git0 lg:hidden"
 					>
 						{menuOpen ? <FiX size={21} /> : <FiMenu size={21} />}
 					</button>
