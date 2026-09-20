@@ -11,6 +11,7 @@ import Cart from "../pages/Cart";
 import Checkout from "../pages/Checkout";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
+import Login from "../pages/Login";
 
 function AppRoutes() {
   return (
@@ -50,6 +51,11 @@ function AppRoutes() {
         <Route
           path="/contact"
           element={<Contact />}
+        />
+
+        <Route
+          path="/login"
+          element={<Login />}
         />
 
       </Route>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FiHeart, FiMenu, FiShoppingBag, FiX } from "react-icons/fi";
+import { FiHeart, FiLogIn, FiMenu, FiShoppingBag, FiX } from "react-icons/fi";
 import { Link, NavLink } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 
@@ -62,6 +62,13 @@ function Navbar() {
 						<span className="px-1 top-0 h-4 min-w-4 justify-center rounded-full bg-pink-500 text-[0.6rem] font-bold text-white absolute right-0 flex items-center">
 							{itemCount}
 						</span>
+					</Link>
+					<Link
+						to="/login"
+						className="gap-2 px-4 py-2 rounded-full bg-gray-900 text-sm font-semibold text-white inline-flex items-center transition hover:bg-pink-500"
+					>
+						<FiLogIn size={16} />
+						Sign in
 					</Link>
 					<button
 						type="button"
